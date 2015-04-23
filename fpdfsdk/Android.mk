@@ -9,7 +9,8 @@ LOCAL_SDK_VERSION := 19
 LOCAL_NDK_STL_VARIANT := gnustl_static
 
 LOCAL_CFLAGS += -O3 -fstrict-aliasing -fprefetch-loop-arrays -fexceptions
-LOCAL_CFLAGS += -Wno-non-virtual-dtor -Wall
+LOCAL_CPPFLAGS += -Wno-non-virtual-dtor
+LOCAL_CFLAGS += -Wall
 LOCAL_CFLAGS += -DFOXIT_CHROME_BUILD
 
 LOCAL_STATIC_LIBRARIES := libpdfiumcore

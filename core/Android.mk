@@ -9,7 +9,7 @@ LOCAL_SDK_VERSION := 19
 LOCAL_NDK_STL_VARIANT := gnustl_static
 
 LOCAL_CFLAGS += -O3 -fstrict-aliasing -fprefetch-loop-arrays -fexceptions
-LOCAL_CPPFLAGS += -Wno-non-virtual-dtor
+LOCAL_CPPFLAGS += -Wno-non-virtual-dtor -Wno-reorder
 LOCAL_CFLAGS += -Wall
 
 # Work around gcc text relocation bug. Fixed in gcc 4.9.
